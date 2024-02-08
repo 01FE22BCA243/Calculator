@@ -16,6 +16,14 @@ class Calculator2{
         return(operand_1 / operand_2);
     }
 
+    float square(float operand_1){
+        return(operand_1 * operand_1);
+    }
+
+    float cube(float operand_1){
+        return(operand_1 * operand_1 * operand_1);
+    }
+
     public static void main (String[] args) {  
         float operand_1=10;
         float operand_2=5;
@@ -28,5 +36,9 @@ class Calculator2{
         System.out.println("Result of multiplication is "+mul_result);
         float div_result = calc.division(operand_1, operand_2);
         System.out.println("Result of division is "+div_result);
+        float squ_result = calc.square(operand_1);
+        System.out.println("Result of square is "+squ_result);
+        float cube_result = calc.cube(operand_1);
+        System.out.println("Result of cube is "+cube_result);
 }
 }
